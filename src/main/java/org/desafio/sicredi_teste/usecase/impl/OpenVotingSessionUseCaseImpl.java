@@ -38,8 +38,8 @@ public class OpenVotingSessionUseCaseImpl implements OpenVotingSessionUseCase {
 
         VotingSession saved = votingSessionRepository.save(new VotingSession(agenda, openedAt, closedAt));
 
-        log.info("openVotingSessionUseCase | FINISH | agendaId={} | closedAt={}", saved.getAgenda().getId(), saved.getClosedAt());
+        log.info("openVotingSessionUseCase | FINISH | agendaId={} | closedAt={}", request.agendaId(), closedAt);
 
-        return new VotingSessionResponse(saved.getClosedAt());
+        return new VotingSessionResponse(closedAt);
     }
 }
