@@ -4,6 +4,12 @@
 API REST para gerenciamento de pautas e sessões de votação, desenvolvida em Java com Spring
 Boot e PostgreSQL, incluindo integração com aplicativo mobile via respostas JSON dinâmicas.
 
+Tecnologias Utilizadas: 
+- Java 25
+- Spring Boot 4.1.0
+- PostgreSQL - RDS
+- EC2
+
 Endpoint Base AWS: http://ec2-3-142-120-177.us-east-2.compute.amazonaws.com:8080
 
 ## Rotas da aplicação
