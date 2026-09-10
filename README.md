@@ -4,6 +4,22 @@
 API REST para gerenciamento de pautas e sessões de votação, desenvolvida em Java com Spring
 Boot e PostgreSQL, incluindo integração com aplicativo mobile via respostas JSON dinâmicas.
 
+## Decisões de Desenvolvimento
+
+- **Separação por responsabilidades:** controllers, use cases, services, repositories, entities e DTOs foram separados para manter o código organizado e facilitar sua manutenção, sem adicionar camadas desnecessárias.
+
+- **DTOs:** utilizados para separar os objetos recebidos e retornados pela API das entidades persistidas no banco.
+
+- **Versionamento pela URL:** foi utilizado o prefixo `/v1` por ser uma abordagem simples e explícita. Futuras alterações incompatíveis podem ser disponibilizadas em `/v2`.
+
+- **Configuração por variáveis de ambiente:** informações que podem variar entre ambientes, como a URL base da aplicação, podem ser configuradas externamente sem alterar o código.
+
+- **Testes automatizados:** foram utilizados testes unitários com JUnit e Mockito para validar principalmente as regras de negócio dos use cases.
+
+- **Teste de performance:** foi utilizado k6 para simular múltiplos usuários realizando votos simultaneamente e observar o comportamento da API sob carga.
+
+- **Integração com o aplicativo mobile:** as respostas de tela seguem o formato especificado no desafio, permitindo que o cliente monte as interfaces a partir dos JSONs retornados pela API.
+
 Tecnologias Utilizadas: 
 - Java 25
 - Spring Boot 4.1.0
