@@ -26,7 +26,7 @@ Tecnologias Utilizadas:
 - PostgreSQL - RDS
 - EC2
 
-Endpoint Base AWS: http://ec2-3-142-120-177.us-east-2.compute.amazonaws.com:8080
+Endpoint Base AWS: http://ec2-18-225-207-107.us-east-2.compute.amazonaws.com:8080
 
 ## Rotas da aplicação
 
@@ -103,12 +103,12 @@ Formulário de Pauta
   ],
   "botaoOk": {
     "texto": "Criar Pauta",
-    "url": "http://ec2-3-142-120-177.us-east-2.compute.amazonaws.com:8080/v1/agenda",
+    "url": "http://ec2-18-225-207-107.us-east-2.compute.amazonaws.com:8080/v1/agenda",
     "body": {}
   },
   "botaoCancelar": {
     "texto": "Cancelar",
-    "url": "http://ec2-3-142-120-177.us-east-2.compute.amazonaws.com:8080"
+    "url": "http://ec2-18-225-207-107.us-east-2.compute.amazonaws.com:8080"
   }
 }
 ```
@@ -130,14 +130,14 @@ Formulário para Abrir Votação
   ],
   "botaoOk": {
     "texto": "Abrir sessão",
-    "url": "http://ec2-3-142-120-177.us-east-2.compute.amazonaws.com:8080/v1/voting-session",
+    "url": "http://ec2-18-225-207-107.us-east-2.compute.amazonaws.com:8080/v1/voting-session",
     "body": {
       "idAgenda": 6
     }
   },
   "botaoCancelar": {
     "texto": "Cancelar",
-    "url": "http://ec2-3-142-120-177.us-east-2.compute.amazonaws.com:8080"
+    "url": "http://ec2-18-225-207-107.us-east-2.compute.amazonaws.com:8080"
   }
 }
 ```
@@ -152,7 +152,7 @@ Seleção de Voto
   "itens": [
     {
       "texto": "SIM",
-      "url": "http://ec2-3-142-120-177.us-east-2.compute.amazonaws.com:8080/v1/vote",
+      "url": "http://ec2-18-225-207-107.us-east-2.compute.amazonaws.com:8080/v1/vote",
       "body": {
         "agendaId": 6,
         "associateId": 10,
@@ -161,7 +161,7 @@ Seleção de Voto
     },
     {
       "texto": "NÃO",
-      "url": "http://ec2-3-142-120-177.us-east-2.compute.amazonaws.com:8080/v1/vote",
+      "url": "http://ec2-18-225-207-107.us-east-2.compute.amazonaws.com:8080/v1/vote",
       "body": {
         "agendaId": 6,
         "associateId": 10,
